@@ -46,7 +46,7 @@ public class Pizza {
             } else {
                 price += 120;
             }
-            flag_cheese=1;
+            flag_topping=1;
         }
         bill+="Extra Toppings Added:"+70+"\n";
     }
