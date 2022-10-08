@@ -34,21 +34,23 @@ public class Pizza {
         if(flag_cheese==0){
             price+=80;
             flag_cheese=1;
+            bill+="Extra Cheese Added:"+80+"\n";
         }
-        bill+="Extra Cheese Added:"+80+"\n";
+
     }
 
     public void addExtraToppings(){
         // your code goes
         if(flag_topping==0) {
-            if (isVeg) {
+            if (isVeg==true) {
                 price += 70;
             } else {
                 price += 120;
             }
             flag_topping=1;
+            bill+="Extra Toppings Added:"+70+"\n";
         }
-        bill+="Extra Toppings Added:"+70+"\n";
+
     }
 
 
@@ -57,8 +59,9 @@ public class Pizza {
         if(flag_bag==0){
             price+=20;
             flag_bag=1;
+            bill+="Paperbag Added:"+20+"\n";
         }
-     bill+="Paperbag Added:"+20+"\n";
+
     }
 
     public String getBill(){
