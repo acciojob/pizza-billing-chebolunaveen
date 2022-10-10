@@ -4,7 +4,7 @@ public class Pizza {
     private int price;
     private Boolean isVeg;
     private String bill;
-    int flag_cheese=0,flag_topping=0,flag_bag=0,flag_bill=0;
+   private int flag_cheese=0,flag_topping=0,flag_bag=0,flag_bill=0;
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
@@ -51,7 +51,6 @@ public class Pizza {
             flag_topping=1;
             bill+="Extra Toppings Added: "+curr_price+"\n";
         }
-
     }
 
 
